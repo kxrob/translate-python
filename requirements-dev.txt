@@ -1,15 +1,11 @@
--r requirements.txt
+-r requirements-build.txt
 Sphinx
 codecov
 coveralls
 ipdb
 ipython
 pre-commit
-pytest
-pytest-cov
 sphinx-autobuild
 sphinx-rtd-theme
 tox
 twine
-vcrpy
-wheel

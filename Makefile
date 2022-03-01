@@ -35,6 +35,9 @@ cov-report:
 test: pip-install-build
 	py.test -vv -s
 
+test-net: pip-install-build
+	py.test -s --disable-vcr
+
 build: test
 	python setup.py sdist
 	python setup.py bdist_wheel

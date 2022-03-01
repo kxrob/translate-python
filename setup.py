@@ -68,8 +68,8 @@ with codecs.open(os.path.join(here, 'CHANGES.rst')) as f:
 with codecs.open(os.path.join(here, 'requirements.txt')) as f:
     install_requirements = [line.split('#')[0].strip() for line in f.readlines() if not line.startswith('#')]
 
-with codecs.open(os.path.join(here, 'requirements-dev.txt')) as f:
-    tests_requirements = [line.replace('\n', '') for line in f.readlines() if not line == '-r requirements.txt\n']
+with codecs.open(os.path.join(here, 'requirements-build.txt')) as f:
+    tests_requirements = [line.strip() for line in f.readlines() if not line.startswith('-r ')]
 
 
 def run():

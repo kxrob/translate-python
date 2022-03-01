@@ -1,5 +1,4 @@
 -r requirements.txt
-pytest
+pytest-vcr
 pytest-cov
-vcrpy
 wheel
